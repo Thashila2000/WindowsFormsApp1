@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu_form));
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Button = new Guna.UI2.WinForms.Guna2Button();
             this.fp_slidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,6 +44,7 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.fp_slidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,22 +53,6 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1345, 12);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(45, 40);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.TabIndex = 5;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2Button
             // 
@@ -82,7 +66,7 @@
             this.guna2Button.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button.ForeColor = System.Drawing.Color.White;
-            this.guna2Button.Location = new System.Drawing.Point(1240, 527);
+            this.guna2Button.Location = new System.Drawing.Point(1240, 524);
             this.guna2Button.Name = "guna2Button";
             this.guna2Button.Size = new System.Drawing.Size(145, 51);
             this.guna2Button.TabIndex = 6;
@@ -151,6 +135,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(212, 80);
             this.guna2Button1.TabIndex = 9;
             this.guna2Button1.Text = "Settings";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // panel3
             // 
@@ -238,13 +223,29 @@
             // 
             this.SidebarTimer.Tick += new System.EventHandler(this.SidebarTimer_Tick);
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1345, 12);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(45, 40);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.TabIndex = 5;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // menu_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1392, 578);
+            this.ClientSize = new System.Drawing.Size(1392, 575);
             this.Controls.Add(this.fp_slidebar);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button);
